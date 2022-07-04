@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@id/tvDetailedName"
+        app:layout_constraintEnd_toEndOf="parent"
+android:padding="2dp"
+        android:layout_margin="4dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        tools:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tvDetailedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+android:textColor="@color/teal_200"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/tvDetailedJobTitle"
+        android:layout_margin="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tvDetailedJobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JobTitle:"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailedName"
+        android:layout_margin="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailedJobTitle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp"
+                android:layout_marginStart="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fav Color"
+                android:layout_marginStart="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/teal_200"
+
+                android:textStyle="bold" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lonitude"
+                android:textSize="14sp"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/tvDetailedPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDetailedColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favorite Color"
+                android:textSize="14sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvDetailedLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lonitude"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDetailedLat."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tvDetailedEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

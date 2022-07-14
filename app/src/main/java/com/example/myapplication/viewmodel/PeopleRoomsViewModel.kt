@@ -23,7 +23,7 @@ class PeopleRoomsViewModel @Inject constructor(private val repository: PeopleRoo
         getPeopleLists()
         getRoomLists()
     }
-    fun getPeopleLists() {
+   private fun getPeopleLists() {
        viewModelScope.launch {
             repository.fetchPeople().collect {
                 _peopleList.postValue(it)
@@ -32,7 +32,7 @@ class PeopleRoomsViewModel @Inject constructor(private val repository: PeopleRoo
 
     }
 
- fun getRoomLists(){
+ private fun getRoomLists(){
         viewModelScope.launch {
             repository.fetchRoomsDetails().collect{
                 _roomsLists.postValue(it)

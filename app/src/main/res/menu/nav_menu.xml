@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/People"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+    <item
+        android:id="@+id/nav_room"
+        android:title="@string/Rooms"
+        android:icon="@drawable/ic_baseline_meeting_room_24"/>
+    <item android:title="Communicator">
+    <menu>
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ"
+            />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Share"/>
+
+    </menu>
+    </item>
+</menu>

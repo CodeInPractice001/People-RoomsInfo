@@ -21,6 +21,7 @@ class ViewPagerAdapter(private val context: Context, fm: FragmentManager): Fragm
                 PeopleFragment()
             }
         }
+
     }
 
     override fun getPageTitle(position: Int): CharSequence {

@@ -3,18 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:contentDescription="TODO"
+        android:padding="2dp"
         app:layout_constraintBottom_toTopOf="@id/tvDetailedName"
         app:layout_constraintEnd_toEndOf="parent"
-android:padding="2dp"
-        android:layout_margin="4dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,16 +24,16 @@ android:padding="2dp"
         android:id="@+id/tvDetailedName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="1dp"
         android:text="Name"
-android:textColor="@color/teal_200"
         android:textAlignment="center"
+        android:textColor="#EA5E32"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintBottom_toTopOf="@id/tvDetailedJobTitle"
-        android:layout_margin="1dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
 
         />
 
@@ -42,16 +41,17 @@ android:textColor="@color/teal_200"
         android:id="@+id/tvDetailedJobTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="JobTitle:"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/tvDetailedName"
         android:layout_margin="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="JobTitle:"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailedName"/>
 
-        />
+
+
 
     <LinearLayout
         android:id="@+id/linear"
@@ -77,49 +77,47 @@ android:textColor="@color/teal_200"
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone:"
-                android:textColor="@color/teal_200"
-                android:textSize="14sp"
                 android:layout_marginStart="30dp"
+                android:text="Phone:"
+                android:textColor="#EA5E32"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:text="Fav Color"
-                android:layout_marginStart="30dp"
+                android:textColor="#EA5E32"
                 android:textSize="14sp"
-                android:textColor="@color/teal_200"
 
                 android:textStyle="bold" />
-
-
-
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:text="Lonitude"
+                android:textColor="#EA5E32"
                 android:textSize="14sp"
-                android:textColor="@color/teal_200"
-                android:textStyle="bold"
-                android:layout_marginStart="30dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Latitude"
                 android:layout_marginStart="30dp"
-                android:textColor="@color/teal_200"
+                android:text="Latitude"
+                android:textColor="#EA5E32"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email:"
                 android:layout_marginStart="30dp"
-                android:textColor="@color/teal_200"
+                android:text="Email:"
+                android:textColor="#EA5E32"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -140,17 +138,28 @@ android:textColor="@color/teal_200"
                 android:text="Phone:"
                 android:textSize="14sp" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
             <TextView
                 android:id="@+id/tvDetailedColor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+android:textColor="@color/black"
                 android:text="Favorite Color"
                 android:textSize="14sp" />
 
+                <ImageView
+                    android:id="@+id/ivColor"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
 
+                    android:background="@drawable/circle"
+                    android:contentDescription="TODO" />
 
-
-
+            </LinearLayout>
             <TextView
                 android:id="@+id/tvDetailedLong"
                 android:layout_width="match_parent"
@@ -164,6 +173,7 @@ android:textColor="@color/teal_200"
                 android:layout_height="wrap_content"
                 android:text="Latitude"
                 android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvDetailedEmail"
                 android:layout_width="match_parent"

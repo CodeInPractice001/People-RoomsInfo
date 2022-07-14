@@ -15,5 +15,3 @@ interface ApiService {
     @GET("v1/rooms")
     suspend fun getAllRoom(): Response<List<RoomsModelItem>>
 }
-///begin with object expected array
-//

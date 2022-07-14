@@ -1,6 +1,7 @@
 package com.example.myapplication.view.people
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -84,8 +85,9 @@ class PeopleFragment : FragmentsViewModel() {
         val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
         val view = layoutInflater.inflate(R.layout.people_description, null)
 
-val image :ImageView = view.findViewById(R.id.imageView)
-        val txtPhone :TextView =view.findViewById(R.id.tvDetailedPhone)
+        val image: ImageView = view.findViewById(R.id.imageView)
+        val colorImageView: ImageView = view.findViewById(R.id.ivColor)
+        val txtPhone: TextView = view.findViewById(R.id.tvDetailedPhone)
         val txtColor: TextView = view.findViewById(R.id.tvDetailedColor)
         val txtName: TextView = view.findViewById(R.id.tvDetailedName)
         val txtJob: TextView = view.findViewById(R.id.tvDetailedJobTitle)
@@ -102,7 +104,8 @@ val image :ImageView = view.findViewById(R.id.imageView)
         txtLat.text = peopleItem.latitude.toString()
         txtName.text = peopleItem.firstName + " " + peopleItem.lastName
 
-
+    //Color.parseColor("#64DD17")
+colorImageView.setBackgroundColor(Color.parseColor(peopleItem.favouriteColor))
 
 
         builder.setView(view)

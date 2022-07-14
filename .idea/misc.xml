@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_card.xml" value="0.1375" />
         <entry key="app/src/main/res/drawable/box.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/people.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/vertical_line.xml" value="0.1375" />
         <entry key="app/src/main/res/layout-v21/rooms_list.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />

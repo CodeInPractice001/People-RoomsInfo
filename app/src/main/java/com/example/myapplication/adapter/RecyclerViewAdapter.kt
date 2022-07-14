@@ -1,6 +1,7 @@
 package com.example.myapplication.adapter
 
-import android.graphics.drawable.Drawable
+
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -38,6 +39,8 @@ class RecyclerViewAdapter(private val openDesc: (PeopleModelItem) -> Unit) :
             binding.txtEmail.text = peopleItem.email
             binding.txtName.text = peopleItem.firstName
             binding.txtOccupation.text = peopleItem.jobTitle
+
+
             binding.root.setOnClickListener { openDesc(peopleItem) }
 
         }

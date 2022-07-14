@@ -1,5 +1,6 @@
 package com.example.myapplication.adapter
 
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -46,7 +47,7 @@ class RecyclerViewAdapter(private val openDesc: (PeopleModelItem) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(rooms: RoomsModelItem) {
             val switch = rooms.is_occupied
-            var data: String = rooms.created_at
+            val data: String = rooms.created_at
             binding.apply {
                 tvCreatedAt.text = data.substring(0, 10)
                 tvOcupancy.text = rooms.max_occupancy.toString()

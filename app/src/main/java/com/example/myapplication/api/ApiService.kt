@@ -8,10 +8,12 @@ import retrofit2.http.GET
 
 
 interface ApiService {
-
+//get(end points)
     @GET("v1/people")
     suspend fun getAllPeople(): Response<PeopleModel>
 
     @GET("v1/rooms")
     suspend fun getAllRoom(): Response<List<RoomsModelItem>>
 }
+///begin with object expected array
+//

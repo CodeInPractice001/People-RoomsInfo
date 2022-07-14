@@ -146,17 +146,18 @@
                 android:id="@+id/tvDetailedColor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+android:textColor="@color/black"
                 android:text="Favorite Color"
                 android:textSize="14sp" />
-            <ImageView
-                android:id="@+id/ivColor"
-                android:contentDescription="TODO"
-                android:layout_marginStart="10dp"
-                android:layout_width="20dp"
 
-                android:layout_height="20dp"
-                android:background="@drawable/circle"
-                />
+                <ImageView
+                    android:id="@+id/ivColor"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+
+                    android:background="@drawable/circle"
+                    android:contentDescription="TODO" />
 
             </LinearLayout>
             <TextView

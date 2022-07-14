@@ -95,6 +95,7 @@ class PeopleFragment : FragmentsViewModel() {
         val txtLong: TextView = view.findViewById(R.id.tvDetailedLong)
         val txtEmail: TextView = view.findViewById(R.id.tvDetailedEmail)
 
+     //   txtColor.setBackgroundColor(Color.parseColor(peopleItem.favouriteColor))
         txtPhone.text = peopleItem.phone
         txtColor.text = peopleItem.favouriteColor
         Glide.with(requireActivity()).load(peopleItem.avatar).into(image)
@@ -104,7 +105,7 @@ class PeopleFragment : FragmentsViewModel() {
         txtLat.text = peopleItem.latitude.toString()
         txtName.text = peopleItem.firstName + " " + peopleItem.lastName
 
-    //Color.parseColor("#64DD17")
+
 colorImageView.setBackgroundColor(Color.parseColor(peopleItem.favouriteColor))
 
 
